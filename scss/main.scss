@@ -1,0 +1,14 @@
+.marcas-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+
+    img{
+        width: 40px;
+        height: 40px;
+        margin: 5px 6.5px 5px 6.5px;
+    }
+}
+
