@@ -29,7 +29,7 @@
             <div class="offcanvas-body bg-dark">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="index.html">INICIO</a>
+                        <a class="nav-link active text-white" aria-current="page" href="../index.html">INICIO</a>
                     </li>
                     <li class="nav-item dropdown">
                         <!-- GENERAR FORMULARIO DE PRESUPUESTO -->
@@ -40,7 +40,7 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item text-dark" href="#">ESTADO</a></li>
                             <li><a class="dropdown-item text-dark" href="#">HISTORIAL</a></li>
-                            <li><a class="dropdown-item text-dark" href="/pages/nuevo-presupuesto.html">NUEVO PRESUPUESTO</a></li>
+                            <li><a class="dropdown-item text-dark" href="nuevo-presupuesto.html">NUEVO PRESUPUESTO</a></li>
                         </ul>
                     </li>
                     <!-- PREGUNTAS Y LAS RESPUESTAS ACTUALES CLIENTE - USUARIO -->
@@ -84,15 +84,75 @@
 
 <body class="bg-dark-subtle">
     <main>
-        <div class="marcas-contenedor bg-white">
-            <img src="img/chevrolet.png" alt="">
-            <img src="img/dodge.png" alt="">
-            <img src="img/fiat.png" alt="">
-            <img src="img/mitsubishi.png" alt="">
-            <img src="img/nissan.png" alt="">
-            <img src="img/ram.png" alt="">
-            <img src="img/subaru.png" alt="">
-        </div>
+        <h1>SOLICITAR PRESUPUESTO</h1>
+        <p>Aqui puedes subir tus fotografias</p>
+
+        <h2>
+            Colaboracion
+        </h2>
+        <p>Para ayudarte mejor necesitamos que rellenes todo el formulario</p>
+
+        <form action="">
+            <div>
+                <h3>Descripcion del Problema</h3>
+                <h4>Instrucciones</h4>
+                <ul>
+                    <li>Describe detalladamente tu problema.</li>
+                    <li>utiliza palabras clave: velocidad, choque, pintura, electronicos, etc.</li>
+                    <li>Tiene compania de seguro</li>
+                    <li>como ocurrio el accidente</li>
+                    <li>velocidad del siniestro</li>
+                </ul>
+                <div>
+                    <label for="exampleFormControlTextarea1" class="form-label">Detalles aqui</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <hr>
+                <!--  GENERAR NUMERO DE OT-->
+                <!-- PATENTE -->
+                <!-- MUMERO DE CHASIS -->
+                Marca
+                Modelo
+                Color
+                Ano
+                Num telefono
+                Tipo de reparacion
+                    <ul>
+                        <li>desabolladura</li>
+                        <ul>
+                            <li>tipo de repuesto</li>
+                            <ul>
+                                <li>Alternativo</li>
+                                <li>original</li>
+                            </ul>
+                        </ul>
+                        <li>mecanica</li>
+                        <ul>
+                            <li>electronica</li>
+                            <li>mecanica basica</li>
+                            <ul>
+                                <li>tren delantero</li>
+                                <li>tren trasero</li>
+                                <li>Sistema de refrigeracion</li>
+                            </ul>
+                            <li>mecanica avanza</li>
+                            <ul>
+                                <li>electronica</li>
+                                <li>motor interno</li>
+                            </ul>
+                        </ul>
+                        <li>pintura</li>
+                    </ul>
+                    <ul>
+                        <li>leve</li>
+                        <li>mediano</li>
+                        <li>grave</li>
+                    </ul>
+            </div>
+            <label for="">Ingresa tu email</label>
+            <input type="email" name="" id="" placeholder="Ingresa tu email">
+        </form>
+        
         <div class="container-fluid">
             <div class="card bg-dark m-1 mt-4" style="width: 100%;">
                 <!-- estas deben ser imagenes de clientes -->
@@ -320,5 +380,4 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
