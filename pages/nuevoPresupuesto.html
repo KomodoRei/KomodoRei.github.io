@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Full Truck</title>
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Nuevo Presupuesto</title>
 </head>
 <!-- <header>
 </header> -->
@@ -34,18 +35,19 @@
                         <!-- GENERAR FORMULARIO DE PRESUPUESTO -->
                         <!-- SUGERIR SUBIR FOTOGRAFIAS -->
                         <!-- DESCRIPCION DEL CHOQUE -->
-                        <a class="nav-link dropdown-toggle text-warning" href="" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">MIS PRESUPUESTOS</a>
+                        <a class="nav-link dropdown-toggle text-warning" href="" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">MIS PRESUPUESTOS</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item text-dark" href="">ESTADO</a></li>
                             <li><a class="dropdown-item text-dark" href="">HISTORIAL</a></li>
-                            <li><a class="dropdown-item text-dark" href="/fulltruck/pages/nuevoPresupuesto.html">NUEVO PRESUPUESTO</a></li>
+                            <li><a class="dropdown-item text-dark" href="nuevoPresupuesto.html">NUEVO
+                                    PRESUPUESTO</a></li>
                         </ul>
                     </li>
                     <!-- PREGUNTAS Y LAS RESPUESTAS ACTUALES CLIENTE - USUARIO -->
                     <!-- ESTADO DE LAS CONSULTAS ACTUALES -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-warning" href="/pages/consultas.html" role="button"
+                        <a class="nav-link dropdown-toggle text-warning" href="../pages/consultas.html" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             MIS CONSULTAS
                         </a>
@@ -83,30 +85,102 @@
 
 <body class="bg-dark-subtle">
     <main>
-        <h1>SOLICITAR PRESUPUESTO</h1>
-        <p>Aqui puedes subir tus fotografias</p>
-
-        <h2>
-            Colaboracion
-        </h2>
-        <p>Para ayudarte mejor necesitamos que rellenes todo el formulario</p>
+        <div class="contenedor informacionPrincipal">
+            <h1>SOLICITAR PRESUPUESTO</h1>
+            <h2>
+                Colaboracion
+            </h2>
+            <p>Para una mejor experiencia necesitamos que <span>rellenes todo el formulario</span></p>
+        </div>
 
         <form action="">
-            <div>
-                <h3>Descripcion del Problema</h3>
-                <h4>Instrucciones</h4>
-                <ul>
-                    <li>Describe detalladamente tu problema.</li>
-                    <li>utiliza palabras clave: velocidad, choque, pintura, electronicos, etc.</li>
-                    <li>Tiene compania de seguro</li>
-                    <li>como ocurrio el accidente</li>
-                    <li>velocidad del siniestro</li>
-                </ul>
-                <div>
-                    <label for="exampleFormControlTextarea1" class="form-label">Detalles aqui</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <div id="containerForm">
+                <div class="instructivo">
+                    <h2>Descripcion del Problema</h3>
+                        <h2>Instrucciones</h4>
+                            <ul>
+                                <li>Describe detalladamente tu problema.</li>
+                                <li>utiliza palabras clave: velocidad, choque, pintura, electronicos, etc.</li>
+                                <li>Tiene compania de seguro</li>
+                                <li>como ocurrio el accidente</li>
+                                <li>velocidad del siniestro</li>
+                            </ul>
+                            <div>
+                                <label for="exampleFormControlTextarea1" class="form-label">Detalles aqui</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
                 </div>
                 <hr>
+                <div class="datos-automovil">
+                    <!-- formatear el input para patente valida y maximo de caracteres -->
+                    <h2>Vehiculo</h2>
+                    <label for="vehiculo">Numero de Chasis</label>
+                    <input type="text">
+                    <label for="vehiculo">Patente</label>
+                    <input type="text">
+                    <label for="vehiculo">Marca</label>
+                    <div class="container">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Selecciona una
+                                opcion</button>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Chevrolet</a>
+                                <a class="dropdown-item" href="#">Suzuki</a>
+                                <a class="dropdown-item" href="#">Hyundai</a>
+                                <a class="dropdown-item" href="#">Nissan</a>
+                                <a class="dropdown-item" href="#">Chery</a>
+                                <a class="dropdown-item" href="#">Toyota</a>
+                                <a class="dropdown-item" href="#">Kia</a>
+                                <a class="dropdown-item" href="#">MG</a>
+                                <a class="dropdown-item" href="#">Mazda</a>
+                                <a class="dropdown-item" href="#">Ford</a>
+                                <a class="dropdown-item" href="#">Volkswagen</a>
+                                <a class="dropdown-item" href="#">Peugeot</a>
+                                <a class="dropdown-item" href="#">Renault</a>
+                                <a class="dropdown-item" href="#">Honda</a>
+                                <a class="dropdown-item" href="#">Subaru</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modelo">
+                        <label for="Modelo">Modelo</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <hr>
+                    <div class="tipo-repuesto">
+                        <h2>Tipo de Repuesto</h2>
+                        <label for="">Alternativo</label>
+                        <input type="radio" name="repuesto" id="rep-alt">
+                        <label for="">Original</label>
+                        <input type="radio" name="repuesto" id="rep-org">
+                    </div>
+                    <hr>
+                    <div class="color">
+                        <h2>Color</h2>
+                        <input type="radio" name="select-color">
+                        <label for="Color">Gris</label>
+                        <input type="radio" name="select-color">
+                        <label for="Color">Blanco</label>
+                        <input type="radio" name="select-color">
+                        <label for="Color">Rojo</label>
+                        <input type="radio" name="select-color">
+                        <label for="Color">Azul</label>
+                        <input type="radio" name="select-color">
+                        <label for="Color">Negro</label>
+                        <input type="radio" name="select-color">
+                        <label for="Color">Otro/Especial</label>
+                    </div>
+                    <hr>
+                    <div class="ano">
+                        <h2>Ano</h2>
+                        <label for="">Ingrese ano del automovil</label>
+                        <input type="text" placeholder="ej: 2000">
+                    </div>
+                    <hr>
+                </div>
+
                 <!--  GENERAR NUMERO DE OT-->
                 <!-- PATENTE -->
                 <!-- MUMERO DE CHASIS -->
@@ -116,267 +190,19 @@
                 Ano
                 Num telefono
                 Tipo de reparacion -->
-                    <ul>
-                        <li>desabolladura</li>
-                        <ul>
-                            <li>tipo de repuesto</li>
-                            <ul>
-                                <li>Alternativo</li>
-                                <li>original</li>
-                            </ul>
-                        </ul>
-                        <li>mecanica</li>
-                        <ul>
-                            <li>electronica</li>
-                            <li>mecanica basica</li>
-                            <ul>
-                                <li>tren delantero</li>
-                                <li>tren trasero</li>
-                                <li>Sistema de refrigeracion</li>
-                            </ul>
-                            <li>mecanica avanza</li>
-                            <ul>
-                                <li>electronica</li>
-                                <li>motor interno</li>
-                            </ul>
-                        </ul>
-                        <li>pintura</li>
-                    </ul>
-                    <ul>
-                        <li>leve</li>
-                        <li>mediano</li>
-                        <li>grave</li>
-                    </ul>
+                <div class="datos-contacto">
+                    <label for="">Ingresa tu email</label>
+                    <input type="email" name="" id="" placeholder="ejemplo@correo.cl">
+                    <label for="">Ingresa tu numero de telefono</label>
+                    <input type="number" name="" id="" placeholder="+569XXXXXXX">
+
+                </div>
             </div>
-            <label for="">Ingresa tu email</label>
-            <input type="email" name="" id="" placeholder="Ingresa tu email">
         </form>
-        
-        <div class="container-fluid">
-            <div class="card bg-dark m-1 mt-4" style="width: 100%;">
-                <!-- estas deben ser imagenes de clientes -->
-                <h2 class="card-header bg-warning"><a class="text-decoration-none text-black" href="pages/consultas.html">MIS PRESUPUESTOS</a></h2>
-                <div class="card-body">
-                    <p class="card-subtitle text-white">Aqui puedes revisar los presupuesto ingresados</p>
-                </div>
-                <!-- <div class="card bg-dark-subtle p-3 m-3"> -->
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active bg-dark" aria-current="active" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            class="bg-dark" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            class="bg-dark" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner bg-dark ps-3 pe-3 pb-3">
-                        <div class="carousel-item active">
-                            <!-- <img src="img/chevrolet.png" class="d-block w-100" alt="..."> -->
-                            <div class="card p-0 m-0 bg-dark-subtle" style="width: 100%;">
-                                <!-- estas deben ser imagenes de clientes -->
-                                <div class="card">
-                                    <h3 class="card-header bg-dark text-warning">
-                                        Fiat - Raparacion Chasis y Pintura
-                                    </h3>
-                                    <div class="card-body">
-                                        <h3 class="card-subtitle text-success">Estado: Resuelto</h3>
-                                        <hr>
-                                        <p class="card-text">
-                                            <ul>
-                                                <li>Marca: Fiat</li>
-                                                <li>Modelo: One</li>
-                                                <li>Siniestro: Chasis y Pintura</li>
-                                                <li>Precio: $550.000</li>
-                                            </ul>
-                                            <a class="btn btn-dark" href="">Detalles</a>
-                                            <a class="btn btn-outline-success" href="">Contratar</a>
-                                        </p>
-                                        <hr>
-                                        <p class="card-text">
-                                            Choque por alcance frontis a 100 km/h
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <!-- <img src="img/chevrolet.png" class="d-block w-100" alt="..."> -->
-                            <div class="card p-0 m-0 bg-dark-subtle" style="width: 100%;">
-                                <!-- estas deben ser imagenes de clientes -->
-                                <div class="card">
-                                    <h3 class="card-header bg-dark text-warning">
-                                        Chevrolet - Electronico
-                                    </h3>
-                                    <div class="card-body">
-                                        <h3 class="card-subtitle text-danger">Estado: Rechazado</h3>
-                                        <hr>
-                                        <p class="card-text">
-                                            <ul>
-                                                <li>Marca: Chevtolet</li>
-                                                <li>Modelo: Sail</li>
-                                                <li>Siniestro: Electrico</li>
-                                                <li>Precio: rechazado</li>
-                                            </ul>
-                                            <a class="btn btn-dark" href="">Detalles</a>
-                                            <a class="btn btn-outline-danger" href="">Revisar</a>
-                                        </p>
-                                        <hr>
-                                        <p class="card-text">
-                                            Por el momento no nos encontramos realizando trabajos electronicos
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <!-- <img src="img/chevrolet.png" class="d-block w-100" alt="..."> -->
-                            <div class="card p-0 m-0 bg-dark-subtle" style="width: 100%;">
-                                <!-- estas deben ser imagenes de clientes -->
-                                <div class="card">
-                                    <h3 class="card-header bg-dark text-warning">
-                                        Fiat - Cambio de Focos
-                                    </h3>
-                                    <div class="card-body">
-                                        <h3 class="card-subtitle text-warning">Estado: Pendiente</h3>
-                                        <hr>
-                                        <p class="card-text">
-                                            <ul>
-                                                <li>Marca: Fiat</li>
-                                                <li>Modelo: One</li>
-                                                <li>Siniestro: Choque</li>
-                                                <li>Precio: Pendiente</li>
-                                            </ul>
-                                            <a class="btn btn-dark" href="">Detalles</a>
-                                            <a class="btn btn-outline-warning" href="">Revisar</a>
-                                        </p>
-                                        <hr>
-                                        <p class="card-text">
-                                            Cambio de focos por choque
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon bg-warning p-4 me-4" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon bg-warning p-4 ms-4" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <!-- </div> -->
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="card bg-dark m-1 mt-4" style="width: 100%;">
-                <!-- estas deben ser imagenes de clientes -->
-                <h2 class="card-header bg-warning"><a class="text-decoration-none text-black" href="pages/consultas.html">MIS CONSULTAS</a></h2>
-                <div class="card-body">
-                    <p class="card-subtitle text-white">Aqui puedes revisar tus consultas pendientes</p>
-                </div>
-                <!-- <div class="card bg-dark-subtle p-3 m-3"> -->
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active bg-dark" aria-current="active" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            class="bg-dark" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            class="bg-dark" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner bg-dark ps-3 pe-3 pb-3">
-                        <div class="carousel-item active">
-                            <!-- <img src="img/chevrolet.png" class="d-block w-100" alt="..."> -->
-                            <div class="card p-0 m-0 bg-dark-subtle" style="width: 100%;">
-                                <!-- estas deben ser imagenes de clientes -->
-                                <div class="card">
-                                    <h3 class="card-header bg-dark text-warning">
-                                        Problema 1 Descripcion
-                                    </h3>
-                                    <div class="card-body">
-                                        <h3 class="card-subtitle text-danger">Estado: Resuelto / Pendiente</h3>
-                                        <hr>
-                                        <p class="card-text">
-                                            Se pueden realizar distintas modificaciones con respecto a esta situacion
-                                            recomendamos colocar aceite, pero primero remover el agua
-                                        </p>
-                                        <hr>
-                                        <p class="card-text">
-                                            Consulta del usuario
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <!-- <img src="img/chevrolet.png" class="d-block w-100" alt="..."> -->
-                            <div class="card p-0 m-0 bg-dark-subtle" style="width: 100%;">
-                                <!-- estas deben ser imagenes de clientes -->
-                                <div class="card">
-                                    <h3 class="card-header bg-dark text-warning">
-                                        Problema 2 Descripcion
-                                    </h3>
-                                    <div class="card-body">
-                                        <h3 class="card-subtitle text-success">Estado: Resuelto / Pendiente</h3>
-                                        <hr>
-                                        <p class="card-text">
-                                            Se pueden realizar distintas modificaciones con respecto a esta situacion
-                                            recomendamos colocar aceite, pero primero remover el agua
-                                        </p>
-                                        <hr>
-                                        <p class="card-text">
-                                            Consulta del usuario
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <!-- <img src="img/chevrolet.png" class="d-block w-100" alt="..."> -->
-                            <div class="card p-0 m-0 bg-dark-subtle" style="width: 100%;">
-                                <!-- estas deben ser imagenes de clientes -->
-                                <div class="card">
-                                    <h3 class="card-header bg-dark text-warning">
-                                        Problema 3 Descripcion
-                                    </h3>
-                                    <div class="card-body">
-                                        <h3 class="card-subtitle text-warning">Estado: Resuelto / Pendiente</h3>
-                                        <hr>
-                                        <p class="card-text">
-                                            Se pueden realizar distintas modificaciones con respecto a esta situacion
-                                            recomendamos colocar aceite, pero primero remover el agua
-                                        </p>
-                                        <hr>
-                                        <p class="card-text">
-                                            Consulta del usuario
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <!-- </div> -->
-            </div>
-        </div>
     </main>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
