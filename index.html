@@ -16,7 +16,7 @@
 <nav class="navbar bg-black sticky-sm-top">
     <div class="container-fluid">
         <!-- colocar estilos al brand -->
-        <a class="navbar-brand text-warning text-uppercase" href="#">Full Truck</a>
+        <a class="navbar-brand text-warning text-uppercase" href="index.html">Full Truck</a>
         <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,21 +33,21 @@
                     <li class="nav-item">
                         <a class="nav-link active text-white" aria-current="page" href="index.html">INICIO</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown" data-bs-toggle="dropdown-toggle">
                         <!-- GENERAR FORMULARIO DE PRESUPUESTO -->
                         <!-- SUGERIR SUBIR FOTOGRAFIAS -->
                         <!-- DESCRIPCION DEL CHOQUE -->
-                        <a class="nav-link dropdown-toggle text-warning" href="#" role="button"
+                        <a class="nav-link dropdown-toggle text-warning" href="pages/presupuestos.html" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">MIS PRESUPUESTOS</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item text-dark" href="#">ESTADO</a></li>
-                            <li><a class="dropdown-item text-dark" href="#">HISTORIAL</a></li>
+                            <li><a class="dropdown-item text-dark" href="../pages/consultas.html">ESTADO</a></li>
+                            <li><a class="dropdown-item text-dark" href="../pages/presupuestos.html">HISTORIAL</a></li>
                             <li><a class="dropdown-item text-dark" href="../pages/nuevoPresupuesto.html">NUEVO PRESUPUESTO</a></li>
                         </ul>
                     </li>
                     <!-- PREGUNTAS Y LAS RESPUESTAS ACTUALES CLIENTE - USUARIO -->
                     <!-- ESTADO DE LAS CONSULTAS ACTUALES -->
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown" data-bs-toggle="dropdown-toggle">
                         <a class="nav-link dropdown-toggle text-warning" href="../pages/consultas.html" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             MIS CONSULTAS
@@ -55,11 +55,11 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item text-dark" href="#">ESTADO</a></li>
                             <li><a class="dropdown-item text-dark" href="#">HISTORIAL</a></li>
-                            <li><a class="dropdown-item text-dark" href="#">NUEVA CONSULTA</a></li>
+                            <li><a class="dropdown-item text-dark" href="pages/consultas.html">NUEVA CONSULTA</a></li>
                         </ul>
                     </li>
 
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown" data-bs-toggle="dropdown-toggle">
                         <a class="nav-link dropdown-toggle text-warning" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">SERVICIOS</a>
                         <ul class="dropdown-menu">
